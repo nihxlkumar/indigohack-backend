@@ -24,23 +24,24 @@ Jsonwebtoken: For handling JSON Web Tokens (JWT) in authentication.
 Nodemon: For automatically restarting the application during development.
 
 
+
+
+
 Features
 
 APIs:
-
 -Create user
-
 -Login
-
 -Add/update flights
-
 -Show all flight listings
-
 -Create notifications for opted-in users
 
 
-Notification System:
 
+
+
+
+Notification System:
 -When there is any change in a flight, a notification is created for users who have opted in.
 
 -A cron job runs every minute to check for any pending notifications.
