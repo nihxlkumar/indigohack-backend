@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "indigo",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "local": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "indigo",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
