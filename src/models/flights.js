@@ -40,11 +40,11 @@ const Flights = sequelize.define(
     },
     actual_departure: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
     },
     actual_arrival: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
     },
     createdAt: {
       allowNull: false,

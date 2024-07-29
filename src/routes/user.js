@@ -1,6 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import ActiveNotifications from "../models/active-notifications.js";
+import { NotificationType } from "../config/constants.js";
 
 const router = express.Router();
 const JWT_SECRET = process.env.NODE_SALT_JWT_SECRET;
@@ -26,7 +27,8 @@ router.put("/add-or-remove-notification", async (req, res) => {
     if (prevNotification) {
       await ActiveNotifications.update(
         {
-          active: !prevNotification.active,
+          active:
+            method === NotificationType.none ? false : !prevNotification.active,
           method,
         },
         {
@@ -37,16 +39,18 @@ router.put("/add-or-remove-notification", async (req, res) => {
         }
       );
     } else {
-      await ActiveNotifications.create({
-        flight_id,
-        user_id: user.id,
-        active: true,
-        method
-      });
+      if (method !== NotificationType.none) {
+        await ActiveNotifications.create({
+          flight_id,
+          user_id: user.id,
+          active: true,
+          method,
+        });
+      }
     }
 
     return res.json({
-      data: prevNotification ? !prevNotification.active : true,
+      data: method === NotificationType.none ? false : prevNotification ? !prevNotification.active : true,
       message: prevNotification
         ? "Notification update successfully"
         : "Added for notification successfullly",

@@ -6,9 +6,10 @@ export const NotificationStatus = {
 };
 
 export const NotificationType = {
-  email: "email",
-  text: "text",
-  app: "app",
+  email: "Email",
+  text: "Text",
+  app: "App",
+  none: "None",
 };
 
 export const FlightStatus = {

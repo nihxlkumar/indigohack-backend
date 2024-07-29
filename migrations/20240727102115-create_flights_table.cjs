@@ -41,10 +41,12 @@ module.exports = {
       actual_departure: {
         type: Sequelize.DATE,
         allowNull: true,
+        defaultValue: null,
       },
       actual_arrival: {
         type: Sequelize.DATE,
         allowNull: true,
+        defaultValue: null,
       },
       createdAt: {
         allowNull: false,

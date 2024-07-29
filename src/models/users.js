@@ -42,10 +42,10 @@ const User = sequelize.define(
   }
 );
 
-User.hasMany(ActiveNotifications, { foreignKey: "user_id" });
-ActiveNotifications.belongsTo(User, { foreignKey: "id" });
+// User.hasMany(ActiveNotifications, { foreignKey: "user_id" });
+// ActiveNotifications.belongsTo(User, { foreignKey: "id" });
 
-User.hasMany(Notifications, { foreignKey: "user_id" });
-Notifications.belongsTo(User, { foreignKey: "id" });
+// User.hasMany(Notifications, { foreignKey: "user_id" });
+// Notifications.belongsTo(User, { foreignKey: "id" });
 
 export default User;
