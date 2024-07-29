@@ -30,14 +30,16 @@ Nodemon: For automatically restarting the application during development.
 Features
 
 APIs:
+
 -Create user
+
 -Login
+
 -Add/update flights
+
 -Show all flight listings
+
 -Create notifications for opted-in users
-
-
-
 
 
 
