@@ -1,5 +1,5 @@
 
-# Indigo Case Study 
+# Indigo Case Study Backend Solution
 
 This project is a backend solution for a case study from Indigo. It displays flights and sends notifications for flight status changes via SMS, email, or app notifications.
 
