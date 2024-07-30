@@ -15,13 +15,17 @@ Sequelize: An ORM for PostgreSQL, used to manage database interactions.
 
 Nodemailer: For sending emails.
 
-Cron: For scheduling tasks.
+firebase-admin: 
 
 Twilio: For sending text message notifications.
+
+Cron: For scheduling tasks.
 
 Jsonwebtoken: For handling JSON Web Tokens (JWT) in authentication.
 
 Nodemon: For automatically restarting the application during development.
+
+cors
 
 
 
@@ -71,6 +75,10 @@ Usage
 
 
 SENDS NOTIFICATIONS LIKE THIS :-
+
+DEVICE: 
+![Screenshot (2)](https://github.com/user-attachments/assets/a46389cd-5715-4def-88c8-1dc016f0f784)
+![Screenshot (3)](https://github.com/user-attachments/assets/0a4cf089-9a45-49c0-bdef-ba5158246af8)
 
 TEXT:
 ![1](https://github.com/user-attachments/assets/ed8a0c3e-8b82-41b7-a158-7e12082b58ad)
